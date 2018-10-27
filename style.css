@@ -82,21 +82,26 @@
 	justify-content: space-between;
 }
 
+.more_pages--content > p:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
 .more_pages--content > p{
 	color: #325f70;
 }
 
 .slider--block{
-	float: left;
 	width: 100%;
 	height: 360px;
-	padding-top: 20px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .slider--content{
-	float: left;
 	width: 50%;
 	height: 100%;
+	float: left;
 }
 
 .slider--content > h2{
@@ -117,6 +122,7 @@
 	color: white;
 	text-align: center;
 	margin-left: 75px;
+	cursor: pointer;
 }
 
 .learn_more-button{
@@ -128,17 +134,20 @@
 	text-align: center;
 	border: 1px solid #99c873;
 	margin-left: 20px;
+	cursor: pointer;
 }
 
 .featured--block{
-	float: left;
 	width: 100%;
 	height: 675px;
 	background-color: #f6fcff;
+	display: flex;
+	justify-content: space-between;
 }
 
 .featured--content{
-	padding-top: 20px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .filter > h2{
@@ -158,8 +167,12 @@
 	cursor: pointer;
 }
 
+.filter > p:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
 .filter{
-	float: left;
 	width: 20%;
 }
 
@@ -167,12 +180,17 @@
 	width: 100%;
 }
 
+.row{
+	display: flex;
+	justify-content: space-between;
+}
+
 .items--content{
-	float: left;
 	width: 24%;
 	margin-right: 2%;
 	margin-bottom: 20px;
 	position: relative;
+	cursor: pointer;
 }
 
 .items--content > p{
@@ -213,29 +231,16 @@
 	left: 55px;
 }
 
-.more--button{
-	float: left;
-	padding-top: 12px;
-	padding-bottom: 12px;
-	padding-right: 5px; 
-	padding-left: 5px;
-	background-color: #99c873;
-	color: white;
-	font-family: arial;
-	text-align: center;
-	font-size: 17px;
-	margin-left: 40%;
-}
 
 .new_items--block{
-	float: left;
 	width: 100%;
 	height: 360px;
 	background-color: #f8fdff;
+	display: flex;
+	justify-content: space-between;
 }
 
 .new_items--content{
-	float: left;
 	width: 23%;
 	margin-right: 2%;
 	margin-top: 20px;
@@ -266,11 +271,12 @@
 }
 
 .offer--block{
-	float: left;
 	width: 100%;
 	height: 325px;
 	padding-top: 30px;
 	background-color: #f8fdff; 
+	display: flex;
+	justify-content: space-between;
 }
 
 .offer--content > h2{
@@ -279,8 +285,12 @@
 	font-weight: lighter;
 }
 
+.offer--content{
+	display: flex;
+	justify-content: space-between;
+}
+
 .week_offer--content{
-	float: left;
 	margin-top: 20px;
 	width: 490px;
 	height: 210px;
@@ -288,19 +298,23 @@
 	background-color: white;
 }
 
-.week_offer--content > h3{
+.offer-row{
+	display: flex;
+	justify-content: space-between;
+}
+
+.offer-row > h3{
 	color: red;
 	padding-top: 20px;
 }
 
-.week_offer--content > h2{
+.offer-row > h2{
 	color: green;
 	padding-top: 5px;
 	padding-bottom: 20px;
 }
 
 .special_offer--button{
-	float: left;
 	color: white;
 	background-color: lightgreen;
 	text-align: center;
@@ -310,7 +324,6 @@
 }
 
 .special_offer--button2{
-	float: left;
 	color: lightgreen;
 	background-color: white;
 	text-align: center;
@@ -322,22 +335,26 @@
 }
 
 .adv--content{
-	margin-left: 500px;
-	margin-top: 20px;
-	width: 490px;
+	width: 420px;
 	height: 210px;
 	border: 1px solid grey;
 	background-color: white;
 	text-align: center;
 	color: grey;
 	padding-top: 80px;
+	margin-top: 20px;
 }
 
 .footer{
-	float: left;
 	width: 100%;
 	height: 266px;
 	background-color: #f8fdff;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer--content{
+	position: relative;
 }
 
 .footer--content > h5{
@@ -346,7 +363,6 @@
 }
 
 .footer--content > h6{
-	float: left;
 	color: #648b99;
 	padding-top: 10px;
 	font-family: arial;
