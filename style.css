@@ -34,6 +34,10 @@
 	padding-top: 20px;
 }
 
+.menu--content__part2 >h2:hover{
+	color: grey;
+}
+
 .search--input{
 	padding-left: 5px;
 	padding-top: 5px;
@@ -42,6 +46,13 @@
 	width: 200px;
 	margin-left: 20px;
 	margin-top: 20px;
+}
+
+.search--input:hover{
+	padding-top: 6px;
+	padding-bottom: 6px;
+	width: 201px;
+	padding-left: 8px;
 }
 
 .pages--block{
@@ -67,6 +78,11 @@
 .pages--content > p:hover{
 	text-decoration: underline;
 	cursor: pointer;
+}
+
+.pages--content:hover .more_pages--block {
+    display: block;
+    float: left;
 }
 
 .more_pages--block{
@@ -123,6 +139,13 @@
 	text-align: center;
 	margin-left: 75px;
 	cursor: pointer;
+	transition: 0.5s;
+}
+
+.order--button:hover{
+	background-color: darkred;
+	box-shadow: 2px 2px 5px grey;
+	color: white;
 }
 
 .learn_more-button{
@@ -135,6 +158,14 @@
 	border: 1px solid #99c873;
 	margin-left: 20px;
 	cursor: pointer;
+	transition: 0.8s;
+}
+
+.learn_more-button:hover{
+	background-color: darkred;
+	border: none;
+	color: white;
+	box-shadow: 2px 2px 5px grey;
 }
 
 .featured--block{
@@ -245,6 +276,7 @@
 	margin-right: 2%;
 	margin-top: 20px;
 	position: relative;
+	cursor: pointer;
 }
 
 .new_items--content > p{
@@ -274,7 +306,7 @@
 	width: 100%;
 	height: 325px;
 	padding-top: 30px;
-	background-color: #f8fdff; 
+	background-color: #f8fdff;
 	display: flex;
 	justify-content: space-between;
 }
@@ -321,6 +353,15 @@
 	width: 83px;
 	height: 30px;
 	padding-top: 5px;
+	cursor: pointer;
+}
+
+.special_offer--button:hover{
+	box-shadow: 2px 2px 5px grey;
+}
+
+.special_offer--button2:hover{
+	box-shadow: 2px 2px 5px grey;
 }
 
 .special_offer--button2{
@@ -332,6 +373,7 @@
 	padding-top: 5px;
 	border: 1px solid lightgreen;
 	margin-top: 10px;
+	cursor: pointer;
 }
 
 .adv--content{
