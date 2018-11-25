@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile</title>
     <link rel="stylesheet" href="style.css">
-    <style type="text/css">
+    <style type="">
     	*{
     padding: 0;
     margin: 0;
@@ -20,7 +20,7 @@
     src: url(./font/KrinkesDecorPERSONAL.ttf);
 }
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 360px){
     .only-mobile{
         display: none;
     }
@@ -196,6 +196,69 @@
         width: 50px;
         height: 50px;
     }
+
+    .customers-says{
+        background-size: 100%;
+        width: 100%;
+        height: 90px;
+        background-repeat: no-repeat;
+        display: flex;
+    }
+
+    .all > h2{
+        text-align: center;
+        font-size: 12px;
+        font-family: Arial;
+        font-weight: lighter;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .container{
+        width: 45%;
+        margin-left: 6%;
+        padding-top: 20px;
+    }
+
+    .sandra-dewi{
+        width: 50px;
+        height: 63px;
+        background-size: 100%;
+        float: left;
+    }
+
+    .quote{
+        color: white;
+        font-size: 7px;
+        padding-top: 5px;
+    }
+
+    .container > footer{
+        font-size: 9px;
+        padding-top: 10px;
+    }
+
+    .container > footer > p{
+        color: grey;
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 7px;
+        padding-top: 1px;
+    }
+
+    .footer{
+        width: 100%;
+        background-color: #151515;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .footer > pre{
+        font-size: 5px;
+        color: #363636;
+        font-family: Arial;
+        padding-left: 5px;
+    }
 }
     </style>
 </head>
@@ -298,6 +361,37 @@
             <img src="./img/brand-logo.png" class="brand-logo">
             <img src="./img/brand-logo.png" class="brand-logo">
         </div>
+    </div>
+
+    <h2>→            Customers Says                ←</h2>
+
+    <div class="customers-says" style="background-image: url(./img/customers-says.png);">
+        <div class="container">
+            <div class="sandra-dewi" style="background-image: url(./img/sandra-dewi.png)"></div>
+            <blockquote class="quote">
+                Sed ut perspiciatis <br>  unde omnis iste natus error sit <br> voluptate
+            </blockquote>
+            <footer>
+                Sandra Dewi
+                <p>FASHION STYLISH</p>
+            </footer>
+        </div>
+        <div class="container">
+            <div class="sandra-dewi" style="background-image: url(./img/sandra-dewi.png)"></div>
+            <blockquote class="quote">
+                Sed ut perspiciatis <br>  unde omnis iste natus error sit <br> voluptate
+            </blockquote>
+            <footer>
+                Sandra Dewi
+                <p>FASHION STYLISH</p>
+            </footer>
+        </div>
+    </div>
+
+    <div class="footer">
+        <pre>© 2015  Shopia  Fashion Store Shopify.
+All Rights Reserved. Ecommerce Software by Shopify.
+Designed by  MoccaLabs.com</pre>
     </div>
 </div>
 
