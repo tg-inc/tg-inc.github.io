@@ -1,403 +1,269 @@
-<!Doctype html>
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile</title>
-    <link rel="stylesheet" href="style.css">
-    <style type="">
-    	*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.all{
-    display: none;
-}
-
-@font-face {
-    font-family: krinkes;
-    src: url(./font/KrinkesDecorPERSONAL.ttf);
-}
-
-@media only screen and (max-width: 360px){
-    .only-mobile{
-        display: none;
-    }
-
-    
-    .all{
-        display: block;
-    }
-
-    .burger-menu{
-        width: 60px;
-        height: 60px;
-        cursor: pointer;
-        float: left;
-        margin-right: 50px;
-    }
-
-    .logo{
-        font-family: krinkes;
-        font-size: 50px;
-    }
-
-    .slider{
-        width: 100%;
-        height: 175px;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        position: relative;
-        margin-top: 10px;
-    }
-
-    .sale{
-        height: 44%;
-        padding-right: 10px;
-        padding-left: 10px;
-        border: 1px solid white;
-        margin: auto;
-        position: absolute;
-        top: 50px;
-        left: 40%;
-    }
-
-    .sale > h2{
-        font-size: 7px;
-        text-align: center;
-        padding-top: 7px;
-        color: white;
-    }
-
-    .sale > h3{
-        font-size: 16px;
-        text-align: center;
-    }
-
-    .featured-center{
-        margin: auto;
-        width: 100%;
-        height: 166px;
-    }
-
-    .featured > h2{
-        text-align: center;
-        font-size: 12px;
-        font-family: Arial;
-        font-weight: lighter;
-        padding-top: 5px;
-        padding-bottom: 15px;
-    }
-
-    .featured-row_small{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 2px;
-    }
-
-    .featured-item{
-        background-size: 100%;
-        width: 115.5px;
-        height: 100px;
-        position: relative;
-    }
-
-    .shop-button{
-        width: 35%;
-        height: 15px;
-        background-color: goldenrod;
-        text-align: center;
-        font-size: 6px;
-        color: white;
-        font-family: Arial;
-        font-weight: lighter;
-        padding-top: 4px;
-        margin: auto;
-        margin-top: 60px;
-        transition: .5s;
-    }
-
-    .shop-button:hover{
-        background-color: #141414;
-    }
-
-    .featured-item_big{
-        width: 122.5px;
-        height: 202px;
-        float: left;
-        margin-right: 2px;
-        margin-left: 2px;
-    }
-
-    .summer-collection{
-        width: 100%;
-        height: 200px;
-    }
-
-    .summer-collection_row{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 5px;
-    }
-
-    .summer-collection_item{
-        width: 100%;
-        height: 99px;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        position: relative;
-    }
-
-    .addtocard{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 20px;
-        background-color: black;
-        opacity: 0.5;
-        color: white;
-        font-size: 10px;
-        text-align: center;
-        padding-top: 4px;
-        cursor: pointer;
-        transition: .5s;
-    }
-
-    .summer-collection_item:hover .addtocard{
-        opacity: 1;
-    }
-
-    .summer-collection > h2 {
-        text-align: center;
-        font-size: 12px;
-        font-family: Arial;
-        font-weight: lighter;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
-    .our-brand > h2{
-        text-align: center;
-        font-size: 12px;
-        font-family: Arial;
-        font-weight: lighter;
-        padding-top: 65px;
-        padding-bottom: 15px;
-    }
-
-    .our-brand-item{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
-
-    .brand-logo{
-        float: left;
-        width: 50px;
-        height: 50px;
-    }
-
-    .customers-says{
-        background-size: 100%;
-        width: 100%;
-        height: 90px;
-        background-repeat: no-repeat;
-        display: flex;
-    }
-
-    .all > h2{
-        text-align: center;
-        font-size: 12px;
-        font-family: Arial;
-        font-weight: lighter;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
-    .container{
-        width: 45%;
-        margin-left: 6%;
-        padding-top: 20px;
-    }
-
-    .sandra-dewi{
-        width: 50px;
-        height: 63px;
-        background-size: 100%;
-        float: left;
-    }
-
-    .quote{
-        color: white;
-        font-size: 7px;
-        padding-top: 5px;
-    }
-
-    .container > footer{
-        font-size: 9px;
-        padding-top: 10px;
-    }
-
-    .container > footer > p{
-        color: grey;
-        font-family: Arial;
-        font-weight: bold;
-        font-size: 7px;
-        padding-top: 1px;
-    }
-
-    .footer{
-        width: 100%;
-        background-color: #151515;
-        padding-top: 10px;
-        padding-bottom: 20px;
-    }
-
-    .footer > pre{
-        font-size: 5px;
-        color: #363636;
-        font-family: Arial;
-        padding-left: 5px;
-    }
-}
-    </style>
+    <link rel="stylesheet" href="./style.css">
+    <link href="//db.onlinewebfonts.com/c/af1f9cf6d51df55b85e1b496776585c4?family=Brandon+Grotesque+Regular" rel="stylesheet" type="text/css"/>
+    <title>Main</title>
 </head>
 <body>
-<div class="all">
-    <div class="top">
-        <img src="./img/burger-menu.png" class="burger-menu">
-        <div class="logo">Sophia</div>
-    </div>
 
-    <div class="slider" style="background-image: url(./img/slider.png)">
-        <div class="sale">
-            <h2>MID-SEASON</h2>
-            <h3>SALE</h3>
-            <h2>→ UP TO ←</h2>
-            <h3 style="font-size: 10px">50 % 	 OFF</h3>
-        </div>
-    </div>
-
-    <div class="featured">
-        <h2>→            Hand Picked                 ←</h2>
-        <div class="featured-row_small" style="float: left;">
-            <div class="featured-item" style="background-image: url(./img/wallet.png)">
-                <div class="shop-button">
-                    Shop Now
-                </div>
-            </div>
-            <div class="featured-item" style="background-image: url(./img/wallet.png)">
-                <div class="shop-button">
-                    Shop Now
-                </div>
-            </div>
-        </div>
-        <img src="./img/hilton.png" class="featured-item_big">
-        <div class="featured-row_small">
-            <div class="featured-item" style="background-image: url(./img/wallet.png)">
-                <div class="shop-button">
-                    Shop Now
-                </div>
-            </div>
-            <div class="featured-item" style="background-image: url(./img/wallet.png)">
-                <div class="shop-button">
-                    Shop Now
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="summer-collection">
-        <h2>→            Summer Collection                 ←</h2>
-        <div class="summer-collection_row">
-            <div class="summer-collection_item" style="background-image: url(./img/sergey.png)">
-                <div class="addtocard">Add To Cart</div>
-            </div>
-            <div class="summer-collection_item" style="background-image: url(./img/sergey.png)">
-                <div class="summer-collection_item" style="background-image: url(./img/sergey.png)">
-                    <div class="addtocard">Add To Cart</div>
-                </div>
-            </div>
-            <div class="summer-collection_item" style="background-image: url(./img/sergey.png)">
-                <div class="summer-collection_item" style="background-image: url(./img/sergey.png)">
-                    <div class="addtocard">Add To Cart</div>
-                </div>
-            </div>
-            <div class="summer-collection_item" style="background-image: url(./img/sergey.png)">
-                <div class="summer-collection_item" style="background-image: url(./img/sergey.png)">
-                    <div class="addtocard">Add To Cart</div>
-                </div>
-            </div>
-            <div class="summer-collection_item" style="background-image: url(./img/sergey.png)">
-                <div class="summer-collection_item" style="background-image: url(./img/sergey.png)">
-                    <div class="addtocard">Add To Cart</div>
-                </div>
-            </div>
-            <div class="summer-collection_item" style="background-image: url(./img/sergey.png)">
-                <div class="summer-collection_item" style="background-image: url(./img/sergey.png)">
-                    <div class="addtocard">Add To Cart</div>
-                </div>
-            </div>
-            <div class="summer-collection_item" style="background-image: url(./img/sergey.png)">
-                <div class="summer-collection_item" style="background-image: url(./img/sergey.png)">
-                    <div class="addtocard">Add To Cart</div>
-                </div>
-            </div>
-            <div class="summer-collection_item" style="background-image: url(./img/sergey.png)">
-                <div class="summer-collection_item" style="background-image: url(./img/sergey.png)">
-                    <div class="addtocard">Add To Cart</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="our-brand">
-        <h2>→            Our Brand                 ←</h2>
-        <div class="our-brand-item">
-            <img src="./img/brand-logo.png" class="brand-logo">
-            <img src="./img/brand-logo.png" class="brand-logo">
-            <img src="./img/brand-logo.png" class="brand-logo">
-            <img src="./img/brand-logo.png" class="brand-logo">
-            <img src="./img/brand-logo.png" class="brand-logo">
-            <img src="./img/brand-logo.png" class="brand-logo">
-        </div>
-    </div>
-
-    <h2>→            Customers Says                ←</h2>
-
-    <div class="customers-says" style="background-image: url(./img/customers-says.png);">
+    <div class="header">
         <div class="container">
-            <div class="sandra-dewi" style="background-image: url(./img/sandra-dewi.png)"></div>
-            <blockquote class="quote">
-                Sed ut perspiciatis <br>  unde omnis iste natus error sit <br> voluptate
-            </blockquote>
-            <footer>
-                Sandra Dewi
-                <p>FASHION STYLISH</p>
-            </footer>
+            <div class="navbar">
+                <div class="navbar-items">
+                    <div class="logo"><h1>ESCAPE</h1></div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Clients</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="home">
+                <div class="home-items">
+                    <p>Can you build the website of my dreams?</p>
+                    <h2>Yup, we can do that.</h2>
+                    <div class="learn_more-button">
+                        Learn More
+                        <div class="animation"></div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+    <div class="services">
         <div class="container">
-            <div class="sandra-dewi" style="background-image: url(./img/sandra-dewi.png)"></div>
-            <blockquote class="quote">
-                Sed ut perspiciatis <br>  unde omnis iste natus error sit <br> voluptate
-            </blockquote>
-            <footer>
-                Sandra Dewi
-                <p>FASHION STYLISH</p>
-            </footer>
+            <div class="service-item">
+                <div class="service-item_text">
+                    <h2>Web <b>Development</b></h2>
+                    <p>Proin iaculis purus consequat sem cure digni ssim.
+                        Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+                        Proin iaculis purus consequat sem cure digni ssim.
+                        Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+                        <br><br>
+                        Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit
+                        Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+                        porttitora entum suscipit purus consequat sem cure digni ssim. Donec porttitora.
+                    </p>
+                </div>
+                <div class="service-item_img" style="background-image: url(./img/flow_tree.png)"></div>
+            </div>
         </div>
     </div>
 
-    <div class="footer">
-        <pre>© 2015  Shopia  Fashion Store Shopify.
-All Rights Reserved. Ecommerce Software by Shopify.
-Designed by  MoccaLabs.com</pre>
+    <div class="identity_branding">
+        <div class="container">
+            <div class="identity_branding-item">
+                <div class="identity_branding-item_img" style="background-image: url(./img/user-icon.png)"></div>
+                <div class="identity_branding-item_text">
+                    <h2>Identity <b>Branding</b></h2>
+                    <p>Proin iaculis purus consequat sem cure digni ssim.
+                        Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+                        Proin iaculis purus consequat sem cure digni ssim.
+                        Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+                        <br><br>
+                        Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit
+                        Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+                        porttitora entum suscipit purus consequat sem cure digni ssim. Donec porttitora.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 
-<div class="only-mobile">
-    Only Mobile!
-</div>
+    <div class="skills">
+        <div class="container">
+            <div class="skill-items">
+                <div class="skill-item">
+                    <div class="skill-item_img" style="background-image: url(./img/Person-Icon.png)"></div>
+                    <div class="skill-item_text">
+                        <h2>Branding & Identity</h2>
+                        <p>Proin iaculis purus consequat sem cure
+                            digni ssim. Donec porttitora entum suscipit
+                            aenean rhoncus posuere odio in tincidunt. entum lorsel
+                            roxes rpents posuere</p>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-item_img" style="background-image: url(./img/browser-icon.png)"></div>
+                    <div class="skill-item_text">
+                        <h2>Web & Graphic Design</h2>
+                        <p>Proin iaculis purus consequat sem cure
+                            digni ssim. Donec porttitora entum suscipit
+                            aenean rhoncus posuere odio in tincidunt. entum lorsel
+                            roxes rpents posuere</p>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-item_img" style="background-image: url(./img/ipad-icon.png)"></div>
+                    <div class="skill-item_text">
+                        <h2>Mobile App Development</h2>
+                        <p>Proin iaculis purus consequat sem cure
+                            digni ssim. Donec porttitora entum suscipit
+                            aenean rhoncus posuere odio in tincidunt. entum lorsel
+                            roxes rpents posuere</p>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-item_img" style="background-image: url(./img/video-icon.png)"></div>
+                    <div class="skill-item_text">
+                        <h2>Animations</h2>
+                        <p>Proin iaculis purus consequat sem cure
+                            digni ssim. Donec porttitora entum suscipit
+                            aenean rhoncus posuere odio in tincidunt. entum lorsel
+                            roxes rpents posuere</p>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-item_img" style="background-image: url(./img/star-icon.png)"></div>
+                    <div class="skill-item_text">
+                        <h2>UI/UX</h2>
+                        <p>Proin iaculis purus consequat sem cure
+                            digni ssim. Donec porttitora entum suscipit
+                            aenean rhoncus posuere odio in tincidunt. entum lorsel
+                            roxes rpents posuere</p>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-item_img" style="background-image: url(./img/camera-icon.png)"></div>
+                    <div class="skill-item_text">
+                        <h2>Photography</h2>
+                        <p>Proin iaculis purus consequat sem cure
+                            digni ssim. Donec porttitora entum suscipit
+                            aenean rhoncus posuere odio in tincidunt. entum lorsel
+                            roxes rpents posuere</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
 
+        <div class="clients">
+            <div class="container">
+                <div class="client-items">
+                    <h2>Awesome <b>Clients</b></h2>
+                    <p>See what nice things our clients said about us.</p>
+                    <div class="client-review">
+                        <div class="client-img"></div>
+                        <div class="client-txt">
+                            <blockquote>
+                                “ Proin iaculis purus consequat sem cure  digni ssim <br>
+                                donec porttitora entum suscipit aenean rhoncus. ”
+                                <footer>- Jamie Richardson, Founder of Cocoa Media</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="client-review">
+                        <div class="client-txt">
+                            <blockquote>
+                                “ Proin iaculis purus consequat sem cure  digni ssim <br>
+                                donec porttitora entum suscipit aenean rhoncus. ”
+                                <footer>- Jamie Richardson, Founder of Cocoa Media</footer>
+                            </blockquote>
+                        </div>
+                        <div class="client-img"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="logos">
+            <div class="container">
+                <div class="logos-row">
+                    <img src="./img/envato.png">
+                    <img src="./img/wordpress.png">
+                    <img src="./img/tuts+.png">
+                    <img src="./img/microlancer.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="team">
+            <div class="container">
+                <div class="team-items">
+                    <h2>Amazing <b>Team</b></h2>
+                    <p>These wonderful people make work enjoyable.</p>
+                </div>
+                <div class="team-row">
+                    <div class="teamates">
+                        <div class="circle"></div>
+                        <h2>Kimberly Thompson</h2>
+                        <p>Marketer</p>
+                        <img src="./img/twitter.png" class="icon social-profile">
+                        <img src="./img/facebook.png" class="social-profile">
+                        <img src="./img/pinterest.png" class="social-profile">
+                    </div>
+                    <div class="teamates">
+                        <div class="circle"></div>
+                        <h2>Kimberly Thompson</h2>
+                        <p>Marketer</p>
+                        <img src="./img/twitter.png" class="icon social-profile">
+                        <img src="./img/facebook.png" class="social-profile">
+                        <img src="./img/pinterest.png" class="social-profile">
+                    </div>
+                    <div class="teamates">
+                        <div class="circle"></div>
+                        <h2>Kimberly Thompson</h2>
+                        <p>Marketer</p>
+                        <img src="./img/twitter.png" class="icon social-profile">
+                        <img src="./img/facebook.png" class="social-profile">
+                        <img src="./img/pinterest.png" class="social-profile">
+                    </div>
+                </div>
+                <h3>Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit <br>
+                    aenean rhoncus posuere odio in tincidunt proin iaculis.</h3>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="footer-items">
+                    <div class="footer-item">
+                        <h2>Say <b>Hello</b></h2>
+                        <p>Don’t be shy, drop us an email and say hello! We are a really nice
+                            bunch of people :)</p>
+                        <div class="contacts">
+                            <div class="contact-item" style="background-image: url(./img/mobile-icon.png)">
+                                <p>(416) 555-0000</p>
+                            </div>
+                            <div class="contact-item" style="background-image: url(./img/Mail-Icon.png)">
+                                <p>hello@escape.com</p>
+                            </div>
+                        </div>
+                        <div class="contacts">
+                            <div class="contact-item" style="background-image: url(./img/Twitter-Icon.png)">
+                                <p>@escape</p>
+                            </div>
+                            <div class="contact-item" style="background-image: url(./img/Facebook-Icon.png)">
+                                <p>facebook.com/escape</p>
+                            </div>
+                        </div>
+                        <div class="contacts">
+                            <div class="contact-item" style="background-image: url(./img/Google+-Icon.png)">
+                                <p>plus.com/escape</p>
+                            </div>
+                            <div class="contact-item" style="background-image: url(./img/Pinterest-Icon.png)">
+                                <p>pinterest.com/escape</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-item footer-contact">
+                        <form action="contact" class="contact">
+                            <input type="text" placeholder="Your Name*">
+                            <input type="email" placeholder="Your E-mail*">
+                            <textarea rows="11" cols="80" placeholder="Your Message*"></textarea>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2018 Escape by Temo Guseinov • Made In Georgia
+        </div>
 </body>
 </html>
