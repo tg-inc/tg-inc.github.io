@@ -2,268 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link href="//db.onlinewebfonts.com/c/af1f9cf6d51df55b85e1b496776585c4?family=Brandon+Grotesque+Regular" rel="stylesheet" type="text/css"/>
-    <title>Main</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My First JavaScript Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
 </head>
 <body>
-
-    <div class="header">
-        <div class="container">
-            <div class="navbar">
-                <div class="navbar-items">
-                    <div class="logo"><h1>ESCAPE</h1></div>
-                    <div class="menu">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Clients</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="home">
-                <div class="home-items">
-                    <p>Can you build the website of my dreams?</p>
-                    <h2>Yup, we can do that.</h2>
-                    <div class="learn_more-button">
-                        Learn More
-                        <div class="animation"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="services">
-        <div class="container">
-            <div class="service-item">
-                <div class="service-item_text">
-                    <h2>Web <b>Development</b></h2>
-                    <p>Proin iaculis purus consequat sem cure digni ssim.
-                        Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
-                        Proin iaculis purus consequat sem cure digni ssim.
-                        Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
-                        <br><br>
-                        Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit
-                        Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
-                        porttitora entum suscipit purus consequat sem cure digni ssim. Donec porttitora.
-                    </p>
-                </div>
-                <div class="service-item_img" style="background-image: url(./img/flow_tree.png)"></div>
-            </div>
-        </div>
+    <div class="container">
+        <h1>Calculator By Temo Guseinov</h1>
+        <p>Number 1:</p>
+        <input type="number" id="n1" placeholder="Enter The Number">
+        <p>Number 2:</p>
+        <input type="number" id="n2" placeholder="Enter The Number"> <br><br>
+        <button onclick="plus()">+</button>
+        <button onclick="minus()">-</button>
+        <button onclick="divide()">/</button>
+        <button onclick="multiplication()">*</button>
+        <hr>
+        <p id="out" class="result"></p>
     </div>
 
-    <div class="identity_branding">
-        <div class="container">
-            <div class="identity_branding-item">
-                <div class="identity_branding-item_img" style="background-image: url(./img/user-icon.png)"></div>
-                <div class="identity_branding-item_text">
-                    <h2>Identity <b>Branding</b></h2>
-                    <p>Proin iaculis purus consequat sem cure digni ssim.
-                        Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
-                        Proin iaculis purus consequat sem cure digni ssim.
-                        Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
-                        <br><br>
-                        Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit
-                        Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
-                        porttitora entum suscipit purus consequat sem cure digni ssim. Donec porttitora.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="skills">
-        <div class="container">
-            <div class="skill-items">
-                <div class="skill-item">
-                    <div class="skill-item_img" style="background-image: url(./img/Person-Icon.png)"></div>
-                    <div class="skill-item_text">
-                        <h2>Branding & Identity</h2>
-                        <p>Proin iaculis purus consequat sem cure
-                            digni ssim. Donec porttitora entum suscipit
-                            aenean rhoncus posuere odio in tincidunt. entum lorsel
-                            roxes rpents posuere</p>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-item_img" style="background-image: url(./img/browser-icon.png)"></div>
-                    <div class="skill-item_text">
-                        <h2>Web & Graphic Design</h2>
-                        <p>Proin iaculis purus consequat sem cure
-                            digni ssim. Donec porttitora entum suscipit
-                            aenean rhoncus posuere odio in tincidunt. entum lorsel
-                            roxes rpents posuere</p>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-item_img" style="background-image: url(./img/ipad-icon.png)"></div>
-                    <div class="skill-item_text">
-                        <h2>Mobile App Development</h2>
-                        <p>Proin iaculis purus consequat sem cure
-                            digni ssim. Donec porttitora entum suscipit
-                            aenean rhoncus posuere odio in tincidunt. entum lorsel
-                            roxes rpents posuere</p>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-item_img" style="background-image: url(./img/video-icon.png)"></div>
-                    <div class="skill-item_text">
-                        <h2>Animations</h2>
-                        <p>Proin iaculis purus consequat sem cure
-                            digni ssim. Donec porttitora entum suscipit
-                            aenean rhoncus posuere odio in tincidunt. entum lorsel
-                            roxes rpents posuere</p>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-item_img" style="background-image: url(./img/star-icon.png)"></div>
-                    <div class="skill-item_text">
-                        <h2>UI/UX</h2>
-                        <p>Proin iaculis purus consequat sem cure
-                            digni ssim. Donec porttitora entum suscipit
-                            aenean rhoncus posuere odio in tincidunt. entum lorsel
-                            roxes rpents posuere</p>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-item_img" style="background-image: url(./img/camera-icon.png)"></div>
-                    <div class="skill-item_text">
-                        <h2>Photography</h2>
-                        <p>Proin iaculis purus consequat sem cure
-                            digni ssim. Donec porttitora entum suscipit
-                            aenean rhoncus posuere odio in tincidunt. entum lorsel
-                            roxes rpents posuere</p>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-
-        <div class="clients">
-            <div class="container">
-                <div class="client-items">
-                    <h2>Awesome <b>Clients</b></h2>
-                    <p>See what nice things our clients said about us.</p>
-                    <div class="client-review">
-                        <div class="client-img"></div>
-                        <div class="client-txt">
-                            <blockquote>
-                                “ Proin iaculis purus consequat sem cure  digni ssim <br>
-                                donec porttitora entum suscipit aenean rhoncus. ”
-                                <footer>- Jamie Richardson, Founder of Cocoa Media</footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                    <div class="client-review">
-                        <div class="client-txt">
-                            <blockquote>
-                                “ Proin iaculis purus consequat sem cure  digni ssim <br>
-                                donec porttitora entum suscipit aenean rhoncus. ”
-                                <footer>- Jamie Richardson, Founder of Cocoa Media</footer>
-                            </blockquote>
-                        </div>
-                        <div class="client-img"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="logos">
-            <div class="container">
-                <div class="logos-row">
-                    <img src="./img/envato.png">
-                    <img src="./img/wordpress.png">
-                    <img src="./img/tuts+.png">
-                    <img src="./img/microlancer.png">
-                </div>
-            </div>
-        </div>
-
-        <div class="team">
-            <div class="container">
-                <div class="team-items">
-                    <h2>Amazing <b>Team</b></h2>
-                    <p>These wonderful people make work enjoyable.</p>
-                </div>
-                <div class="team-row">
-                    <div class="teamates">
-                        <div class="circle"></div>
-                        <h2>Kimberly Thompson</h2>
-                        <p>Marketer</p>
-                        <img src="./img/twitter.png" class="icon social-profile">
-                        <img src="./img/facebook.png" class="social-profile">
-                        <img src="./img/pinterest.png" class="social-profile">
-                    </div>
-                    <div class="teamates">
-                        <div class="circle"></div>
-                        <h2>Kimberly Thompson</h2>
-                        <p>Marketer</p>
-                        <img src="./img/twitter.png" class="icon social-profile">
-                        <img src="./img/facebook.png" class="social-profile">
-                        <img src="./img/pinterest.png" class="social-profile">
-                    </div>
-                    <div class="teamates">
-                        <div class="circle"></div>
-                        <h2>Kimberly Thompson</h2>
-                        <p>Marketer</p>
-                        <img src="./img/twitter.png" class="icon social-profile">
-                        <img src="./img/facebook.png" class="social-profile">
-                        <img src="./img/pinterest.png" class="social-profile">
-                    </div>
-                </div>
-                <h3>Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit <br>
-                    aenean rhoncus posuere odio in tincidunt proin iaculis.</h3>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="container">
-                <div class="footer-items">
-                    <div class="footer-item">
-                        <h2>Say <b>Hello</b></h2>
-                        <p>Don’t be shy, drop us an email and say hello! We are a really nice
-                            bunch of people :)</p>
-                        <div class="contacts">
-                            <div class="contact-item" style="background-image: url(./img/mobile-icon.png)">
-                                <p>(416) 555-0000</p>
-                            </div>
-                            <div class="contact-item" style="background-image: url(./img/Mail-Icon.png)">
-                                <p>hello@escape.com</p>
-                            </div>
-                        </div>
-                        <div class="contacts">
-                            <div class="contact-item" style="background-image: url(./img/Twitter-Icon.png)">
-                                <p>@escape</p>
-                            </div>
-                            <div class="contact-item" style="background-image: url(./img/Facebook-Icon.png)">
-                                <p>facebook.com/escape</p>
-                            </div>
-                        </div>
-                        <div class="contacts">
-                            <div class="contact-item" style="background-image: url(./img/Google+-Icon.png)">
-                                <p>plus.com/escape</p>
-                            </div>
-                            <div class="contact-item" style="background-image: url(./img/Pinterest-Icon.png)">
-                                <p>pinterest.com/escape</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-item footer-contact">
-                        <form action="contact" class="contact">
-                            <input type="text" placeholder="Your Name*">
-                            <input type="email" placeholder="Your E-mail*">
-                            <textarea rows="11" cols="80" placeholder="Your Message*"></textarea>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            © 2018 Escape by Temo Guseinov • Made In Georgia
-        </div>
+    <footer>
+        Designed And Made By Temo Guseinov 2018 Georgia
+    </footer>
 </body>
 </html>
