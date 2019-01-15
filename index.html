@@ -1,31 +1,46 @@
+<!-- Calculator HomeWork 13/01/2019 By Temo Guseinov -->
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My First JavaScript Calculator</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Calculator</h1>
-        <p>Number 1:</p>
-        <input type="number" id="n1" placeholder="Enter The Number">
-        <p>Number 2:</p>
-        <input type="number" id="n2" placeholder="Enter The Number"> <br><br>
-        <button onclick="plus()">+</button>
-        <button onclick="minus()">-</button>
-        <button onclick="divide()">/</button>
-        <button onclick="multiplication()">*</button>
-        <hr>
-        <p id="out" class="result"></p>
+
+    <div class="calculator" id="calculator">
+        <div class="screen" id="screen"></div>
+        <div class="buttons">
+            <div class="other-btn">MC</div>
+            <div class="other-btn">M+</div>
+            <div class="other-btn">M-</div>
+            <div class="other-btn">MR</div>
+            <div id="clear" class="other-btn">C</div>
+            <div id="backspace" class="other-btn">⌫</div>
+            <div class="btn">/</div>
+            <div class="btn">*</div>
+            <div class="btn">7</div>
+            <div class="btn">8</div>
+            <div class="btn">9</div>
+            <div class="btn">-</div>
+            <div class="btn">4</div>
+            <div class="btn">5</div>
+            <div class="btn">6</div>
+            <div class="btn">+</div>
+            <div class="btn">1</div>
+            <div class="btn">2</div>
+            <div class="btn">3</div>
+            <div class="btn">%</div>
+        </div>
+        <div class="bottom-buttons">
+            <div class="btn">0</div>
+            <div class="btn">.</div>
+            <div id="equal" class="other-btn">=</div>
+        </div>
     </div>
 
-    <footer>
-        Designed And Made By Temo Guseinov 2018 Georgia
-    </footer>
+    <script src="script.js"></script>
+
 </body>
 </html>
+<!-- END -->
